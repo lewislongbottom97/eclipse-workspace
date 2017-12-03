@@ -1,0 +1,13 @@
+import com.pi4j.io.gpio.GpioPinDigitalOutput;
+
+public class rise {
+	
+	private static void rise() throws InterruptedException {
+		GpioPinDigitalOutput relay1 = null;
+		relay1.high();
+		GpioPinDigitalOutput relay2 = null;
+		relay2.low();
+		System.out.println("Actuator Extending"); //Glider pushing out water
+		Thread.sleep(20000);
+	}
+}
